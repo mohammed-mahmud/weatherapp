@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <title>Weather App</title>
+</head>
+<body class="flex h-screen items-center justify-center bg-[#9c9dde] font-ubuntu">
+  <!-- Container -->
+  <div class="w-100 shadow-2xl bg-white rounded-lg">
+    <!-- Navbar -->
+    <div class="w-full flex p-4 justify-center">
+      <input type="text" placeholder="Enter City Name" value="New York" class="w-full h-8 outline-none text-sm text-[#525050] px-2 rounded-full border border-[#b3b3b3] focus:border-[#9c9dde]" />
+      <button  class="w-9 h-8 cursor-pointer text-[#9b9b9b] rounded-full ml-1 transition-all duration-300 bg-white border border-[#b3b3b3] hover:bg-[#9c9dde] hover:text-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <!--Content-->
+    <div>
+      <!--MainBody-->
+      <div class="flex py-2 justify-center">
+        <img src="./Image/sun.png" alt="Clouds" class="w-[8rem] max-w-full" />
+      </div>
+      <div class=" text-[#323232] text-2.5xl text-center mb-2">
+        <div>75°F</div>
+        <div>Sunny</div>
+      </div>
+      <!--Weather Details-->
+      <div class="flex mt-4 mb-6 justify-between">
+          <!--First Info-->
+        <div class="p-5 flex text-[#323232] text-lg">
+          <img class="h-[3rem] mr-2" src="./Image/thermometer.png" alt="Humidity" />
+          <div>
+            <p>74%</p>
+            <span>Humidity</span>
+          </div>
+        </div>
+        <!--Second info-->
+        <div class="p-5 flex text-[#323232] text-lg">
+          <img class="h-[3rem] mr-2" src="./Image/wind.png" alt="Wind Speed" />
+          <div>
+            <p>6 mph</p>
+            <span>Wind Speed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
